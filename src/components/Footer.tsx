@@ -21,9 +21,6 @@ export default function Footer() {
     <footer className="border-t border-white/10">
       <div className="container-px flex flex-col items-center gap-8 py-12 sm:flex-row sm:justify-between">
         <a href="#home" className="flex items-center gap-2 text-base font-semibold">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 font-display text-sm font-bold text-white">
-            {profile.initials}
-          </span>
           {profile.name}
         </a>
 

@@ -4,7 +4,7 @@ export const profile = {
   initials: "AM",
   email: "olamidemoses132@gmail.com",
   whatsapp: "08167893167",
-  location: "Lagos, Nigeria · Available worldwide",
+  location: "Lagos, Nigeria | Available worldwide",
   socials: [
     { label: "GitHub", href: "https://github.com/mosesolamide", icon: "github" },
     { label: "X / Twitter", href: "https://twitter.com/MoWebDev_NG", icon: "twitter" },
@@ -19,9 +19,7 @@ export const heroRoles = [
 ];
 
 export const stats = [
-  { label: "Years of Experience", value: 2, suffix: "+" },
-  { label: "Projects Completed", value: 20, suffix: "+" },
-  { label: "Happy Clients", value: 20, suffix: "+" },
+  { label: "Years of Experience", value: 2, suffix: "" },
   { label: "Technologies Used", value: 7, suffix: "+" },
 ];
 
@@ -66,40 +64,28 @@ export const services = [
 
 export const projects = [
   {
+    title: "SMAIR Foundation",
+    description:
+      "A nonprofit website promoting accessible AI, robotics, and technology education for children across Africa.",
+    tags: ["Web Design", "Responsive Design", "SEO"],
+    image: "/project-images/smair-foundation.png",
+    live: "https://smairfoundation.com",
+  },
+  {
     title: "Instant Launch",
     description:
-      "A SaaS website that allows vendors to get a simple website for their business in minutes.",
+      "An online store builder that helps small businesses launch, manage orders, and receive payments in minutes.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Fastify"],
-    accent: "from-blue-500/30 via-indigo-500/20 to-transparent",
+    image: "/project-images/instant-launch.png",
     live: "https://instantlaunch.shop",
-    github: "#",
   },
   {
     title: "M.O Website Development",
     description:
-      "My own web agency site — showcasing frontend development and web design services for startups and businesses.",
+      "A web agency website showcasing professional design, development, SEO, and e-commerce services for businesses.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    accent: "from-emerald-500/30 via-teal-500/15 to-transparent",
+    image: "/project-images/mowebdev.png",
     live: "https://mowebdev.com.ng",
-    github: "#",
-  },
-  {
-    title: "Glamz Online Store",
-    description:
-      "A premium fashion eCommerce platform built with high-performance WordPress integration.",
-    tags: ["WordPress", "WooCommerce", "Elementor", "PHP"],
-    accent: "from-pink-500/30 via-rose-500/15 to-transparent",
-    live: "https://shop.mowebdev.com.ng/",
-    github: "#",
-  },
-  {
-    title: "Mose' Signature Store",
-    description:
-      "A comprehensive lifestyle store featuring watches, apparel, fragrances, and premium retail presentation.",
-    tags: ["WordPress", "WooCommerce", "Elementor", "CSS3"],
-    accent: "from-amber-500/30 via-orange-500/15 to-transparent",
-    live: "https://mosesignature.store/",
-    github: "#",
   },
 ];
 
@@ -114,7 +100,7 @@ export const skillGroups = [
   },
   {
     category: "Design",
-    skills: [ "Capcut", "Canva"],
+    skills: ["Video Editing", "CapCut", "Canva"],
   },
   {
     category: "Tools",
@@ -124,58 +110,17 @@ export const skillGroups = [
 
 export const experience = [
   {
-    date: "2024 — Present",
-    title: "Freelance Frontend Developer",
-    org: "Self-Employed",
+    date: "2026",
+    title: "Frontend Developer Intern",
+    org: "SMAIR Foundation",
     description:
-      "Partnering with startups and small businesses to design and build modern, high-performance websites and web apps using React, TypeScript, and Tailwind CSS.",
+      "Interned at SMAIR Foundation, supporting the development and improvement of responsive web experiences for an organization making AI, robotics, and technology education accessible to young people.",
   },
   {
-    date: "2022 — 2024",
-    title: "Frontend Developer (Contract)",
-    org: "Various Client Projects",
+    date: "2026 to Present",
+    title: "Building InstantLaunch",
+    org: "InstantLaunch",
     description:
-      "Delivered custom WordPress sites, landing pages, and dashboard UIs for clients across e-commerce, fintech, and creative industries.",
-  },
-  {
-    date: "2021 — 2022",
-    title: "UI/UX & Graphic Design",
-    org: "Digital Creator",
-    description:
-      "Designed brand identities, social media graphics, and website UI concepts, building a strong foundation in visual design and user experience.",
-  },
-  {
-    date: "2020 — 2021",
-    title: "Started Development Journey",
-    org: "Self-Taught",
-    description:
-      "Began learning HTML, CSS, and JavaScript — building small projects and gradually growing into modern frontend frameworks and tooling.",
-  },
-];
-
-export const testimonials = [
-  {
-    name: "Sarah Mitchell",
-    role: "Founder, Lumen Studio",
-    quote:
-      "Akintunde transformed our outdated website into a fast, modern experience. Communication was seamless and the final product exceeded expectations.",
-  },
-  {
-    name: "David Okafor",
-    role: "Product Manager, Nimbus Finance",
-    quote:
-      "Working with Akintunde was a great experience — clean code, pixel-perfect UI, and he genuinely cares about the end-user experience.",
-  },
-  {
-    name: "Emily Carter",
-    role: "Marketing Lead, Northstar",
-    quote:
-      "Our landing page conversion rate improved significantly after the redesign. Highly recommend for anyone needing a modern, polished web presence.",
-  },
-  {
-    name: "James Thompson",
-    role: "CEO, Aether Goods",
-    quote:
-      "Professional, responsive, and detail-oriented. He took our vague ideas and turned them into a beautiful, functioning online store.",
+      "Building an online store platform that helps small business owners launch a professional storefront in minutes, showcase products, manage orders, and receive payments without needing technical skills.",
   },
 ];

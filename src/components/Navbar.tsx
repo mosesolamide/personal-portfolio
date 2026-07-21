@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
-import { profile } from "../data/content";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -9,7 +8,6 @@ const NAV_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
-  { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -46,10 +44,7 @@ export default function Navbar() {
           }`}
         >
           <a href="#home" className="flex items-center gap-2 text-base font-semibold">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 font-display text-sm font-bold text-white shadow-[0_0_20px_-4px_rgba(168,85,247,0.8)]">
-              {profile.initials}
-            </span>
-            <span className="hidden sm:inline">Akintunde Moses</span>
+            <span>Akintunde Moses</span>
           </a>
 
           <nav className="hidden items-center gap-1 lg:flex">

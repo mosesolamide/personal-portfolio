@@ -15,6 +15,7 @@ import {
   SiVite,
 } from "react-icons/si";
 import { BsFiletypePsd } from "react-icons/bs";
+import { FiVideo } from "react-icons/fi";
 import Reveal from "./ui/Reveal";
 import SectionHeading from "./ui/SectionHeading";
 import { skillGroups } from "../data/content";
@@ -30,6 +31,7 @@ const ICON_MAP: Record<string, { icon: React.ElementType; color: string }> = {
   Elementor: { icon: SiElementor, color: "text-pink-500" },
   Figma: { icon: SiFigma, color: "text-violet-400" },
   Photoshop: { icon: BsFiletypePsd, color: "text-blue-400" },
+  "Video Editing": { icon: FiVideo, color: "text-blue-400" },
   Canva: { icon: SiCanva, color: "text-teal-400" },
   Git: { icon: SiGit, color: "text-orange-500" },
   GitHub: { icon: SiGithub, color: "text-ink" },

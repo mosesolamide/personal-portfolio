@@ -24,7 +24,7 @@ export default function SectionHeading({
       </Reveal>
       <Reveal delay={0.1}>
         <h2 className="mt-5 text-3xl font-semibold sm:text-4xl lg:text-5xl">
-          {title} {highlight && <span className="gradient-text">{highlight}</span>}
+          {title} {highlight && <span className="accent-text">{highlight}</span>}
         </h2>
       </Reveal>
       {description && (

@@ -21,7 +21,7 @@ export default function Services() {
           description="From idea to launch, I provide end-to-end frontend development and design services tailored to your brand."
         />
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-4xl gap-6 md:grid-cols-2">
           {services.map((service, i) => {
             const Icon = ICONS[service.icon];
             return (
@@ -31,9 +31,7 @@ export default function Services() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   className="glass glass-hover group relative h-full overflow-hidden rounded-2xl p-8"
                 >
-                  <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-2xl transition-opacity duration-300 group-hover:opacity-100 opacity-0" />
-
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 text-2xl text-blue-400">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-400">
                     <Icon />
                   </div>
 

@@ -3,7 +3,6 @@ import { FiMail, FiGithub, FiTwitter, FiArrowUpRight } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import Reveal from "./ui/Reveal";
 import SectionHeading from "./ui/SectionHeading";
-import BackgroundGlow from "./ui/BackgroundGlow";
 import { profile } from "../data/content";
 
 const SOCIAL_ICONS: Record<string, React.ElementType> = {
@@ -31,7 +30,6 @@ const contactCards = [
 export default function Contact() {
   return (
     <section id="contact" className="section">
-      <BackgroundGlow />
       <div className="container-px">
         <SectionHeading
           eyebrow="Get In Touch"
@@ -51,7 +49,7 @@ export default function Contact() {
                 transition={{ type: "spring", stiffness: 300, damping: 22 }}
                 className="glass glass-hover group flex h-full flex-col items-center gap-4 rounded-2xl p-8 text-center"
               >
-                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 text-2xl text-blue-400">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-400">
                   <card.icon />
                 </span>
                 <div>

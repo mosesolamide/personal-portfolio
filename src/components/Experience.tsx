@@ -11,12 +11,12 @@ export default function Experience() {
           eyebrow="My Journey"
           title="Experience &"
           highlight="growth."
-          description="A timeline of my freelance work, client projects, and continuous growth as a developer and designer."
+          description="My internship experience and the product I am currently building."
         />
 
         <div className="relative mx-auto mt-16 max-w-3xl">
           {/* vertical line */}
-          <div className="absolute left-[15px] top-2 bottom-2 w-px bg-gradient-to-b from-blue-500 via-purple-500 to-transparent sm:left-1/2 sm:-translate-x-1/2" />
+          <div className="absolute left-[15px] top-2 bottom-2 w-px bg-blue-500/50 sm:left-1/2 sm:-translate-x-1/2" />
 
           <div className="space-y-10">
             {experience.map((item, i) => (
@@ -32,7 +32,7 @@ export default function Experience() {
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 300, damping: 15, delay: i * 0.1 }}
-                    className="absolute left-0 top-1.5 z-10 flex h-8 w-8 items-center justify-center rounded-full border-4 border-bg bg-gradient-to-br from-blue-500 to-purple-500 sm:left-1/2 sm:-translate-x-1/2"
+                    className="absolute left-0 top-1.5 z-10 flex h-8 w-8 items-center justify-center rounded-full border-4 border-bg bg-blue-500 sm:left-1/2 sm:-translate-x-1/2"
                   >
                     <span className="h-2 w-2 rounded-full bg-white" />
                   </motion.span>

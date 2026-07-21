@@ -10,8 +10,8 @@ function StatCard({ value, suffix, label, delay }: { value: number; suffix: stri
     <Reveal delay={delay}>
       <div ref={ref} className="glass glass-hover rounded-2xl p-6 text-center sm:p-8">
         <p className="font-display text-4xl font-bold sm:text-5xl">
-          <span className="gradient-text">{count}</span>
-          <span className="gradient-text">{suffix}</span>
+          <span className="accent-text">{count}</span>
+          <span className="accent-text">{suffix}</span>
         </p>
         <p className="mt-2 text-sm text-muted">{label}</p>
       </div>
@@ -38,7 +38,7 @@ export default function About() {
               </p>
               <p>
                 I help businesses and brands establish a strong online presence through modern web
-                experiences — from sleek marketing sites to interactive product dashboards.
+                experiences, from sleek marketing sites to interactive product dashboards.
               </p>
               <p>
                 Whether it's a custom React application, a polished WordPress build, or a brand

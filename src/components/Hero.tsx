@@ -4,8 +4,7 @@ import { FaReact, FaWordpress } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import { profile, heroRoles } from "../data/content";
 import { useTypewriter } from "../hooks/useTypewriter";
-import BackgroundGlow from "./ui/BackgroundGlow";
-import profileImage from "../assets/mosesimage.png";
+import profileImage from "../assets/moses-portrait.png";
 
 export default function Hero() {
   const role = useTypewriter(heroRoles);
@@ -13,21 +12,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden pt-32 pb-20"
+      className="relative flex min-h-screen items-center overflow-hidden bg-bg pt-32 pb-20"
     >
-      <BackgroundGlow />
-
-      {/* grid pattern */}
-      <div
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
-          maskImage: "radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)",
-        }}
-      />
-
       <div className="container-px grid w-full items-center gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
         {/* Left: text content */}
         <div>
@@ -51,7 +37,7 @@ export default function Hero() {
             className="mt-6 text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl xl:text-[4.25rem]"
           >
             I build modern, fast, and{" "}
-            <span className="gradient-text">beautiful digital experiences.</span>
+            <span className="accent-text">beautiful digital experiences.</span>
           </motion.h1>
 
           <motion.p
@@ -71,7 +57,7 @@ export default function Hero() {
             className="mt-7 flex h-8 items-center gap-3 font-mono text-sm text-muted sm:text-base"
           >
             <span className="text-ink">{"<"}</span>
-            <span className="gradient-text font-semibold">
+            <span className="accent-text font-semibold">
               {role}
               <span className="ml-0.5 inline-block w-[2px] animate-pulse bg-current align-middle">
                 &nbsp;
@@ -112,67 +98,19 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Right: profile image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92, y: 16 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
-        >
-          <div className="relative mx-auto aspect-square w-full max-w-sm lg:max-w-md">
-            {/* glow ring */}
-            <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-blue-500/40 via-purple-500/30 to-teal-400/30 opacity-60 blur-2xl" />
-
-            {/* image frame */}
-            <div className="glass relative h-full w-full overflow-hidden rounded-[2rem] p-2">
-              <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-[#161629] via-[#10101c] to-[#0a0a12]">
-                <img
-                  src={profileImage}
-                  alt="Portrait of Akintunde Moses, Frontend Developer"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* floating badge: role */}
-            <motion.div
-              animate={{ y: [0, -14, 0] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="glass absolute -left-6 top-8 flex items-center gap-3 px-4 py-3 sm:-left-10"
-            >
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-500/15 text-blue-400">
-                <FaReact className="text-lg" />
-              </span>
-              <div className="leading-tight">
-                <p className="text-xs font-semibold">React.js</p>
-                <p className="text-[11px] text-muted">Component Architecture</p>
-              </div>
-            </motion.div>
-
-            {/* floating badge: experience */}
-            <motion.div
-              animate={{ y: [0, 14, 0] }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="glass absolute -right-4 bottom-10 px-4 py-3 sm:-right-10"
-            >
-              <p className="text-2xl font-bold gradient-text">4+</p>
-              <p className="text-[11px] text-muted">Years Experience</p>
-            </motion.div>
-
-            {/* floating badge: typescript */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="glass absolute -bottom-6 left-10 flex h-12 w-12 items-center justify-center rounded-2xl text-xl text-blue-400 sm:left-16"
-            >
-              <SiTypescript />
-            </motion.div>
+        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem] border border-white/10 bg-surface-2 p-2 lg:max-w-md">
+            <img
+              src={profileImage}
+              alt="Portrait of Akintunde Moses, Frontend Developer"
+              className="h-full w-full rounded-[1.5rem] object-cover object-[center_38%]"
+            />
           </div>
 
           <p className="mt-10 text-center text-sm text-muted">
-            <span className="font-semibold text-ink">{profile.name}</span> — {profile.location}
+            <span className="font-semibold text-ink">{profile.name}</span> | {profile.location}
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
