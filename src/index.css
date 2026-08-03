@@ -1,89 +1,53 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Sora", "Inter", system-ui, sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Manrope Variable", "Manrope", system-ui, sans-serif;
+  --font-sans: "Manrope Variable", "Manrope", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
 
   --color-bg: #07070c;
   --color-surface: #0c0c14;
   --color-surface-2: #12121d;
   --color-line: rgba(255, 255, 255, 0.08);
-
   --color-ink: #f5f6fa;
   --color-muted: #9598ad;
   --color-muted-2: #6c6e85;
-
   --color-blue: #4f7dff;
 }
 
 @layer base {
-  * {
-    border-color: var(--color-line);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
+  * { border-color: var(--color-line); }
+  html { scroll-behavior: smooth; }
   body {
-    @apply bg-bg text-ink font-sans antialiased;
+    @apply bg-bg font-sans text-ink antialiased;
     background-color: var(--color-bg);
     color: var(--color-ink);
     font-feature-settings: "ss01" on, "cv01" on;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight;
-  }
-
-  ::selection {
-    background: rgba(79, 125, 255, 0.35);
-    color: #fff;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: var(--color-bg);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-blue);
-    border-radius: 999px;
-  }
+  h1, h2, h3, h4, h5, h6 { @apply font-display tracking-tight; }
+  ::selection { background: rgba(79, 125, 255, 0.35); color: #fff; }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--color-bg); }
+  ::-webkit-scrollbar-thumb { background: var(--color-blue); border-radius: 999px; }
 }
 
 @layer components {
-  .container-px {
-    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
-  }
+  .container-px { @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12; }
+  .glass { @apply rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl; }
+  .glass-hover { @apply transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06]; }
+  .accent-text { @apply text-blue-400; }
+  .section { @apply relative py-24 sm:py-28 lg:py-32; }
+  .eyebrow { @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-muted; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_0_30px_-8px_rgba(79,125,255,0.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-[0_0_40px_-6px_rgba(79,125,255,0.8)] active:translate-y-0; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-ink backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/[0.08] active:translate-y-0; }
+}
 
-  .glass {
-    @apply rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl;
-  }
-
-  .glass-hover {
-    @apply transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06];
-  }
-
-  .accent-text {
-    @apply text-blue-400;
-  }
-
-  .section {
-    @apply relative py-24 sm:py-28 lg:py-32;
-  }
-
-  .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-muted;
-  }
-
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_0_30px_-8px_rgba(79,125,255,0.7)] transition-all duration-300 hover:bg-blue-400 hover:shadow-[0_0_40px_-6px_rgba(79,125,255,0.8)] hover:-translate-y-0.5 active:translate-y-0;
-  }
-
-  .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-ink backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.08] hover:-translate-y-0.5 active:translate-y-0;
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

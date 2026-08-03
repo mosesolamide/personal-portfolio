@@ -64,20 +64,20 @@ export const services = [
 
 export const projects = [
   {
-    title: "SMAIR Foundation",
-    description:
-      "A nonprofit website promoting accessible AI, robotics, and technology education for children across Africa.",
-    tags: ["Web Design", "Responsive Design", "SEO"],
-    image: "/project-images/smair-foundation.png",
-    live: "https://smairfoundation.com",
-  },
-  {
     title: "Instant Launch",
     description:
       "An online store builder that helps small businesses launch, manage orders, and receive payments in minutes.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Fastify"],
     image: "/project-images/instant-launch.png",
     live: "https://instantlaunch.shop",
+  },
+  {
+    title: "SMAIR Foundation",
+    description:
+      "A nonprofit website promoting accessible AI, robotics, and technology education for children across Africa.",
+    tags: ["Web Design", "Responsive Design", "SEO"],
+    image: "/project-images/smair-foundation.png",
+    live: "https://smairfoundation.com",
   },
   {
     title: "M.O Website Development",
@@ -110,17 +110,23 @@ export const skillGroups = [
 
 export const experience = [
   {
-    date: "2026",
-    title: "Frontend Developer Intern",
-    org: "SMAIR Foundation",
-    description:
-      "Interned at SMAIR Foundation, supporting the development and improvement of responsive web experiences for an organization making AI, robotics, and technology education accessible to young people.",
-  },
-  {
-    date: "2026 to Present",
+    date: "2026 - Present",
     title: "Building InstantLaunch",
     org: "InstantLaunch",
     description:
       "Building an online store platform that helps small business owners launch a professional storefront in minutes, showcase products, manage orders, and receive payments without needing technical skills.",
+    skills: ["React", "TypeScript", "Tailwind CSS", "Product Development"],
+    link: "https://instantlaunch.shop",
+    current: true,
+  },
+  {
+    date: "2026",
+    title: "Frontend Developer Intern",
+    org: "SMAIR Foundation",
+    description:
+      "Supported the development and improvement of responsive web experiences for an organization making AI, robotics, and technology education accessible to young people.",
+    skills: ["Frontend Development", "Responsive Design", "SEO"],
+    link: "https://smairfoundation.com",
+    current: false,
   },
 ];

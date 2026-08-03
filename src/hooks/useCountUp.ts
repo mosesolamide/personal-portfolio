@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import { useInView } from "framer-motion";
+import { useInView, useReducedMotion } from "framer-motion";
 
 export function useCountUp(target: number, duration = 1.6) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const reduceMotion = useReducedMotion();
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || reduceMotion) return;
 
     let frame: number;
     const start = performance.now();
@@ -24,7 +25,7 @@ export function useCountUp(target: number, duration = 1.6) {
 
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [isInView, target, duration]);
+  }, [isInView, target, duration, reduceMotion]);
 
-  return { ref, value };
+  return { ref, value: reduceMotion && isInView ? target : value };
 }

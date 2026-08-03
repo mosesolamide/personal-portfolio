@@ -7,8 +7,15 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ResumePage from "./components/ResumePage";
 
 function App() {
+  const isResumePage = window.location.pathname.replace(/\/$/, "") === "/resume";
+
+  if (isResumePage) {
+    return <ResumePage />;
+  }
+
   return (
     <>
       <Navbar />
