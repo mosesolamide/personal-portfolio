@@ -87,6 +87,14 @@ export const projects = [
     image: "/project-images/mowebdev.png",
     live: "https://mowebdev.com.ng",
   },
+  {
+    title: "Northline Cargo",
+    description:
+      "A logistics website for tracking shipments, requesting delivery quotes, and managing local and international deliveries.",
+    tags: ["Web Development", "Responsive Design", "Logistics"],
+    image: "/project-images/northline-cargo.png",
+    live: "https://northline-cargo-ng.netlify.app/",
+  },
 ];
 
 export const skillGroups = [
