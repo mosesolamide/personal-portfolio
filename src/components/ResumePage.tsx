@@ -1,7 +1,7 @@
 import { FiArrowLeft, FiDownload, FiExternalLink, FiGithub, FiMail, FiMapPin, FiPrinter } from "react-icons/fi";
 import { experience, profile, projects, skillGroups } from "../data/content";
 
-const cvPath = "/Akintunde-Moses-CV.pdf";
+const cvPath = "/AKINTUNDE MOSES CVs.pdf";
 
 export default function ResumePage() {
   return (
@@ -17,7 +17,7 @@ export default function ResumePage() {
               <FiPrinter />
               <span className="hidden sm:inline">Print</span>
             </button>
-            <a href={cvPath} download="Akintunde-Moses-CV.pdf" className="btn-primary !px-5 !py-2.5">
+            <a href={cvPath} download="AKINTUNDE MOSES CVs.pdf" className="btn-primary !px-5 !py-2.5">
               <FiDownload /> Download CV
             </a>
           </div>
