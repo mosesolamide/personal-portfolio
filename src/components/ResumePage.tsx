@@ -13,11 +13,11 @@ export default function ResumePage() {
             Back to portfolio
           </a>
           <div className="flex items-center gap-3">
-            <button type="button" onClick={() => window.print()} className="btn-secondary !px-4 !py-2.5" aria-label="Print resume">
+            <button type="button" onClick={() => window.print()} className="btn-secondary px-4! py-2.5!" aria-label="Print resume">
               <FiPrinter />
               <span className="hidden sm:inline">Print</span>
             </button>
-            <a href={cvPath} download="AKINTUNDE MOSES CVs.pdf" className="btn-primary !px-5 !py-2.5">
+            <a href={cvPath} download="AKINTUNDE MOSES CVs.pdf" className="btn-primary px-5! py-2.5!">
               <FiDownload /> Download CV
             </a>
           </div>

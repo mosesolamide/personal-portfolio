@@ -100,7 +100,7 @@ export const projects = [
 export const skillGroups = [
   {
     category: "Frontend",
-    skills: ["React.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
+    skills: ["React.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3", "Next.js"],
   },
   {
     category: "CMS",

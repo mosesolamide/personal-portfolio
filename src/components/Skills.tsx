@@ -1,13 +1,46 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { SiReact, SiTypescript, SiJavascript, SiTailwindcss, SiHtml5, SiCss, SiWordpress, SiElementor, SiCanva, SiGit, SiGithub, SiVite } from "react-icons/si";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
+  SiHtml5,
+  SiCss,
+  SiWordpress,
+  SiElementor,
+  SiCanva,
+  SiGit,
+  SiGithub,
+  SiVite,
+} from "react-icons/si"
 import { FiVideo } from "react-icons/fi";
 import { FaCut } from "react-icons/fa";
 import Reveal from "./ui/Reveal";
 import SectionHeading from "./ui/SectionHeading";
 import { skillGroups } from "../data/content";
 
-const ICON_MAP: Record<string, { icon: React.ElementType; color: string }> = {
-  "React.js": { icon: SiReact, color: "text-sky-400" }, TypeScript: { icon: SiTypescript, color: "text-blue-500" }, JavaScript: { icon: SiJavascript, color: "text-yellow-400" }, "Tailwind CSS": { icon: SiTailwindcss, color: "text-cyan-400" }, HTML5: { icon: SiHtml5, color: "text-orange-500" }, CSS3: { icon: SiCss, color: "text-blue-400" }, WordPress: { icon: SiWordpress, color: "text-indigo-400" }, Elementor: { icon: SiElementor, color: "text-pink-500" }, "Video Editing": { icon: FiVideo, color: "text-blue-400" }, CapCut: { icon: FaCut, color: "text-white" }, Canva: { icon: SiCanva, color: "text-teal-400" }, Git: { icon: SiGit, color: "text-orange-500" }, GitHub: { icon: SiGithub, color: "text-ink" }, Vite: { icon: SiVite, color: "text-purple-400" },
+const ICON_MAP: Record<
+  string,
+  { icon: React.ElementType; color: string }
+> = {
+  "React.js": { icon: SiReact, color: "text-sky-400" },
+
+  "Next.js": { icon: SiNextdotjs, color: "text-white" },
+
+  TypeScript: { icon: SiTypescript, color: "text-blue-500" },
+  JavaScript: { icon: SiJavascript, color: "text-yellow-400" },
+  "Tailwind CSS": { icon: SiTailwindcss, color: "text-cyan-400" },
+  HTML5: { icon: SiHtml5, color: "text-orange-500" },
+  CSS3: { icon: SiCss, color: "text-blue-400" },
+  WordPress: { icon: SiWordpress, color: "text-indigo-400" },
+  Elementor: { icon: SiElementor, color: "text-pink-500" },
+  "Video Editing": { icon: FiVideo, color: "text-blue-400" },
+  CapCut: { icon: FaCut, color: "text-white" },
+  Canva: { icon: SiCanva, color: "text-teal-400" },
+  Git: { icon: SiGit, color: "text-orange-500" },
+  GitHub: { icon: SiGithub, color: "text-ink" },
+  Vite: { icon: SiVite, color: "text-purple-400" },
 };
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.05 } } };
 const item = { hidden: { opacity: 0, y: 16, scale: 0.9 }, show: { opacity: 1, y: 0, scale: 1 } };
