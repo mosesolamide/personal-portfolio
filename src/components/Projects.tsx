@@ -14,7 +14,7 @@ export default function Projects() {
           eyebrow="Featured Work"
           title="Selected"
           highlight="projects."
-          description="Real products and websites I have designed or developed for commerce, education, and professional services."
+          description="Real products and websites I have designed or developed for commerce, logistics, education, and professional services."
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">

@@ -95,6 +95,30 @@ export const projects = [
     image: "/project-images/northline-cargo.png",
     live: "https://northline-cargo-ng.netlify.app/",
   },
+  {
+    title: "Harbor & Crown Properties",
+    description:
+      "A premium property advisory website presenting curated residential, commercial, and business investment opportunities.",
+    tags: ["Web Development", "Responsive Design", "Real Estate"],
+    image: "/project-images/harbor-crown.png",
+    live: "https://harbor-crown.pxxl.click/",
+  },
+  {
+    title: "Lunaraé Hair",
+    description:
+      "A polished e-commerce storefront for discovering and shopping premium human-hair wigs, bundles, and lace pieces.",
+    tags: ["E-commerce", "Responsive Design", "UI/UX"],
+    image: "/project-images/lunarae-hair.png",
+    live: "https://lunarae-hair-ng.netlify.app/",
+  },
+  {
+    title: "AnnyNumbers",
+    description:
+      "A web platform for purchasing temporary phone numbers and receiving fast SMS verification codes with local payments.",
+    tags: ["Web Application", "Responsive Design", "SMS Verification"],
+    image: "/project-images/anny-numbers.png",
+    live: "https://annynumbers.com/",
+  },
 ];
 
 export const skillGroups = [
