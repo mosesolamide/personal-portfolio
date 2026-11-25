@@ -19,7 +19,7 @@ export const heroRoles = [
 ];
 
 export const stats = [
-  { label: "Years of Experience", value: 2, suffix: "" },
+  { label: "Years of Experience", value: 3, suffix: "+" },
   { label: "Technologies Used", value: 7, suffix: "+" },
 ];
 
@@ -70,6 +70,14 @@ export const projects = [
     tags: ["React", "TypeScript", "Tailwind CSS", "Fastify"],
     image: "/project-images/instant-launch.png",
     live: "https://instantlaunch.shop",
+  },
+  {
+    title: "Straitgate Schools",
+    description:
+      "The official website for Straitgate Schools, presenting admissions, academics, and extracurricular activities to parents and students.",
+    tags: ["Web Development", "Responsive Design", "Education"],
+    image: "/project-images/straitgate-school.png",
+    live: "https://straitgateschool.org",
   },
   {
     title: "SMAIR Foundation",
