@@ -88,14 +88,6 @@ export const projects = [
     live: "https://smairfoundation.com",
   },
   {
-    title: "M.O Website Development",
-    description:
-      "A web agency website showcasing professional design, development, SEO, and e-commerce services for businesses.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    image: "/project-images/mowebdev.png",
-    live: "https://mowebdev.com.ng",
-  },
-  {
     title: "Northline Cargo",
     description:
       "A logistics website for tracking shipments, requesting delivery quotes, and managing local and international deliveries.",
@@ -118,14 +110,6 @@ export const projects = [
     tags: ["E-commerce", "Responsive Design", "UI/UX"],
     image: "/project-images/lunarae-hair.png",
     live: "https://lunarae-hair-ng.netlify.app/",
-  },
-  {
-    title: "AnnyNumbers",
-    description:
-      "A web platform for purchasing temporary phone numbers and receiving fast SMS verification codes with local payments.",
-    tags: ["Web Application", "Responsive Design", "SMS Verification"],
-    image: "/project-images/anny-numbers.png",
-    live: "https://annynumbers.com/",
   },
 ];
 
